@@ -89,6 +89,38 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .site-header {
+        .menu-icon {
+            display: block;
+        }
+        .nav-links {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10rem 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 2rem;
+            color: white;
+            background-color: #272727;
+            transition: 
+                opacity .8s .5s,
+                clip-path 1s .5s;
+            clip-path: circle(200px at top right)
+        }
+
+        .menu-btn:checked ~ .nav-links {
+            opacity: 1;
+            clip-path: circle(100% at center);
+        }
+    }
+}
   
 /*.site-title {
     @include relative-font-size(1.625);
