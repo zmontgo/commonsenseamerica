@@ -1,6 +1,13 @@
 /**
  * Reset some basic elements
  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -50,7 +57,7 @@ hr {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul:not(.nav-links), ol:not(.nav-links), dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -92,7 +99,7 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul:not(.nav-links), ol:not(.nav-links) {
   margin-left: $spacing-unit;
 }
 
