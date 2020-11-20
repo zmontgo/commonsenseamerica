@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
   padding: 0 1em;
   border-top: none;
   min-height: $spacing-unit * 1.865;
@@ -421,8 +421,9 @@ input:checked ~ .tab-content {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/flag.jpg");
 
-  /* Set a specific height */
-  height: 600px;
+  /* Set a specific height, remove padding to make it exactly the size of the screen */
+  height: 100vh;
+  padding: 0;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;

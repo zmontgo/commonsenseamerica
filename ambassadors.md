@@ -4,4 +4,25 @@ permalink: "/ambassadors/"
 layout: default
 ---
 
-<p>This should be very fun. Handle this through the CMS so it can be added to later.</p>
+<style>
+  .ambassadors-list {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ambassador {
+    display: relative;
+    margin: 2em;
+  }
+</style>
+
+<div class="ambassadors-list index-sections content">
+  {% for ambassador in site.ambassadors %}
+    <div class="ambassador">
+      <img src="{{ ambassador.image }}" style="border-radius: 50%">
+      <h2>{{ ambassador.name }}</h2>
+    </div>
+  {% endfor %}
+</div>

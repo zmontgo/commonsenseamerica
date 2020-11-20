@@ -9,6 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  ambassadors:
+    title: Ambassadors
+    output: true
 description: 'Helping Americans defend the ideas that make America great with truth and grace.'
 baseurl: ''
 url: https://commonsenseamericaus/
@@ -16,7 +19,10 @@ logo: https://
 show_excerpts: true
 header_pages:
 - index.md
+- about.md
 - blog.md
+- ambassadors.md
+- podcasts.md
 theme: minima
 plugins:
 - jekyll-feed
