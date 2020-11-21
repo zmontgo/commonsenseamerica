@@ -1,7 +1,7 @@
 ---
 name: Peter Burris
 image: peterburris.webp
-age: 15
+age: 85
 state: Texas
 quote: This is an inspirational quote.
 ---
