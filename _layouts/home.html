@@ -3,18 +3,42 @@ layout: default
 ---
 
 <div id="particles-js text" class="particles-js">
-    <div class="index-header hero-image">
+    <div class="hero-image">
         <div class="hero-text">
             <h1 style="font-family: 'Source Code Pro', sans-serif;">CommonSense America</h1>
             <h2 style="font-family: 'Source Code Pro', sans-serif;font-size: 1.2em">{{- site.description | escape -}}</h3>
         </div>
     </div>
-    <div class="about-us index-sections content">
+    <div class="about-us index-sections content section">
         <h2 class='blue-header'>Who are we?</h2>
         <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
     </div>
-    <div class="about-us index-sections content">
-        <h2 class='blue-header'>Who are we?</h2>
-        <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
+    <div class="about-us index-sections content section">
+        <h2 class='blue-header'>Get Involved</h2>
+        <p>CommonSense America stretches all throughout the country. See our <a href="ambassadors/">ambassadors</a> or become one yourself!</p>
+    </div>
+    <div class="about-us index-sections content section">
+        <h2 class="blue-header">Get the Latest</h2>
+        {%- if site.posts.size > 0 -%}
+        <h2 class="post-list-heading">Blog Posts</h2>
+        <ul class="post-list" style="display: flex;justify-content: space-around;flex-wrap:nowrap">
+            {%- for post in site.posts limit:2 -%}
+            <li class="post">
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                </h3>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <p><em>By {{post.author}} on {{ post.date | date: date_format}}</em></p>
+                {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
+        {% else %}
+        <div>There's nothing here! Check back later.</div>
+        {% endif %}
     </div>
 </div>

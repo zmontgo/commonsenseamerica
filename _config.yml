@@ -27,3 +27,10 @@ theme: minima
 plugins:
 - jekyll-feed
 - jekyll-sitemap
+pagination:
+  enabled: true
+  per_page: 6
+  sort_reverse: true
+  indexpage: page-1
+  permalink: page-:num
+  extension: json

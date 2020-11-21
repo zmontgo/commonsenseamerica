@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
     
-    <div class="index-sections content">
+    <div class="index-sections content section">
         <div class="topnav-spacer"></div>
         {{ content }}
         
@@ -19,12 +19,18 @@ layout: default
                     </a>
                 </h3>
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <p><em>By {{post.author}} on {{ post.date | date: date_format}}</em></p>
+                <div style="display:flex;flex-direction: row;align-items: center;margin: 10px 0;">
+                    {%- if post.image -%}
+                        <img src="{{post.image}}" style="width: 50px;border-radius: 50%;margin:0 10px 0 0;">
+                    {%- else -%}
+                        <img src="/assets/default.jpg" style="width: 50px;border-radius: 50%;margin:0 10px 0 0;">
+                    {%- endif -%}
+                    <span><em>By {{post.author}} on {{ post.date | date: date_format}}</em></span>
+                </div>
                 {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
                 {%- endif -%}
             </li>
-            <hr>
             {%- endfor -%}
         </ul>
         {% else %}

@@ -55,6 +55,17 @@ h1, h2, h3 {
   width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.post-meta {
+  font-size: $small-font-size;
+}
+
+.post {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1em 2em;
+  width: 47%;
+}
+
 @include media-query($on-laptop) {
   .footer-col-1,
   .footer-col-2 {
@@ -72,9 +83,25 @@ h1, h2, h3 {
   .shownlink {
     display: none;
   }
+  .post {
+    width: 100%;
+  }
 }
 
 @include media-query($on-palm) {
+  p, .logo, a {
+    font-size: 4.5vw;
+  }
+  h2 {
+    font-size: 6vw!important;
+  }
+  .social-btns {
+    display: flex;
+    justify-content: space-around;
+  }
+  .post-meta {
+    font-size: 1em;
+  }
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -115,12 +142,13 @@ h1, h2, h3 {
 
   > li {
     margin-bottom: $spacing-unit;
+    border: 2px solid black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 1em 2em;
   }
 }
 
-.post-meta {
-  font-size: $small-font-size;
-}
 
 .post-link {
   display: block;
