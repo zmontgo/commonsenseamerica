@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.375);
   margin-bottom: $spacing-unit / 2;
   color: white;
   text-align: left;
@@ -344,7 +344,7 @@ input:checked ~ .tab-content {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/flag.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/flag.webp");
 
   /* Set a specific height, remove padding to make it exactly the size of the screen */
   height: 100vh;
@@ -426,20 +426,50 @@ input:checked ~ .tab-content {
   transform: scale(0.8);
 }
 
-.social-btns .btn.instagram:before {background: #DD2A7B;}
-.social-btns .btn.instagram .fa {color: #DD2A7B;}
+.social-btns .btn.instagram {
+  &:hover {
+    transition: background-color 1s;
+    background: $instagram;
+  }
 
-.social-btns .btn.twitter:before {background: #3cf;}
-.social-btns .btn.twitter .fa {color: #3cf;}
+  &:before {
+    background: $instagram;
+  }
 
-.social-btns .btn.google:before {background: #dc4a38;}
-.social-btns .btn.google .fa {color: #dc4a38;}
+  .fa {
+    color: $instagram;
+  }
+}
 
-.social-btns .btn.linkedin:before {background: #0077B5;}
-.social-btns .btn.linkedin .fa {color: #0077B5;}
+.social-btns .btn.twitter {
+  &:hover {
+    transition: background-color 1s;
+    background: $twitter;
+  }
 
-.social-btns .btn.skype:before {background: #00aff0;}
-.social-btns .btn.skype .fa {color: #00aff0;}
+  &:before {
+    background: $twitter;
+  }
+
+  .fa {
+    color: $twitter;
+  }
+}
+
+.social-btns .btn.google {
+  &:hover {
+    transition: background-color 1s;
+    background: $google;
+  }
+
+  &:before {
+    background: $google;
+  }
+
+  .fa {
+    color: $google;
+  }
+}
 
 .social-btns .btn:focus:before, .social-btns .btn:hover:before {
   top: -10%;
@@ -483,4 +513,11 @@ input:checked ~ .tab-content {
 .social-btns .btn .fa {
   font-size: 38px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 1000px) {
+  .post-list {
+    margin: 0 auto;
+    width: 50vw;
+  }
 }
