@@ -17,3 +17,5 @@ fields:
 - type: text
   name: quote
   label: quote
+pages:
+- _ambassadors/susanloomis-1.md
