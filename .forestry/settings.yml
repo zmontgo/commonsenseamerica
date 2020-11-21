@@ -12,6 +12,8 @@ sections:
   label: Ambassadors
   create: all
   match: "**/*"
+  templates:
+  - ambassador
 - type: directory
   path: _uploads
   label: Uploads
@@ -21,6 +23,8 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
