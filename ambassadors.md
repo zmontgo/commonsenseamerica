@@ -19,6 +19,10 @@ layout: default
 </style>
 
 <div class="topnav-spacer"></div>
+<div class="content">
+  <h2 class="red-header">Meet Our Ambassadors</h2>
+  <p>Something about what ambassadors do.</p>
+</div>
 <div class="ambassadors-list index-sections content">
   {% for ambassador in site.ambassadors %}
     <div class="ambassador">

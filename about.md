@@ -7,7 +7,7 @@ layout: default
 <div class="topnav-spacer"></div>
 <div class="index-sections content">
   <div class="section">
-    <h2>About Us</h2>
+    <h2 class="red-header">About Us</h2>
     <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
     <p>Our goal is to help Americans discover, defend, and introduce others to the ideas that made America great with truth and grace.</p>
     <p>We are community of young patriots seeking to pushback against the trendy, fashionable, vogue ideas of today’s culture.</p>
@@ -15,7 +15,7 @@ layout: default
   </div>
 
   <div class="section">
-    <h2>Our Team</h2>
+    <h2 class="red-header">Our Team</h2>
     <div class="about-wrapper">
       <div style="background-image: url({{ "/assets/grant.webp" | relative_url }});" class="about-image"></div>
       <div class="about-text">

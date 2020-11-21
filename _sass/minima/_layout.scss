@@ -214,8 +214,8 @@ h1, h2, h3 {
   // padding-bottom: 35px;
   margin-bottom: 7em;
 }
-.blue-header {
-  color: #CA3721;
+.red-header {
+  color: #BB2D21;
   font-family: 'Source Code Pro', sans-serif;
 }
 .content {
@@ -370,6 +370,10 @@ input:checked ~ .tab-content {
 .section {
   width: 65vw;
   margin: auto;
+}
+
+.section.wide {
+  width: 75vw;
 }
 
 .about-text {

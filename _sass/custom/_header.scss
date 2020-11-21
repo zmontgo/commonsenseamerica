@@ -87,6 +87,11 @@
         display: none;
     }
 
+    &.defaultblack {
+        background: rgba(0,0,0, 0.9);
+        color: white;
+    }
+
     &.scrolled {
         height: 50px;
         background: rgba(0,0,0, 0.9);
