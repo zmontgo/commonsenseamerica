@@ -19,10 +19,10 @@ fields:
   default: post
 - type: text
   name: main_content
-  label: Content
-  description: Main content of the blog post.
   config:
     required: true
+  label: Summary
+  description: A summary of the blog post sent in the email.
 - type: list
   name: categories
   label: Categories
