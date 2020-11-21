@@ -23,6 +23,7 @@ layout: default
     <div class="ambassador">
       <img src="{{ ambassador.image }}" style="border-radius: 50%">
       <h2>{{ ambassador.name }}</h2>
+      <p>
     </div>
   {% endfor %}
 </div>

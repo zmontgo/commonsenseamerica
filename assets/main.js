@@ -1,4 +1,5 @@
 const header = document.querySelector('.site-header');
+const toggler = document.querySelector('.menu-icon');
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -8,3 +9,14 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+;(function(){
+    function addAnim() {
+        toggler.classList.add('animate')
+        // remove the listener, no longer needed
+        toggler.removeEventListener('click', addAnim);
+    };
+
+    // listen to mouseover for the container
+    toggler.addEventListener('click', addAnim);
+})();
