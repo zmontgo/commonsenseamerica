@@ -334,3 +334,36 @@ input:checked ~ .tab-content {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+.section {
+  width: 65vw;
+  margin: auto;
+}
+
+.about-text {
+  padding: 2rem;
+  width: 50%;
+  text-align: left;
+  margin: auto 0;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+  .about-image {
+    width: 100vw;
+  }
+
+  .about-text {
+    text-align: center;
+    width: 100vw;
+  }
+}
