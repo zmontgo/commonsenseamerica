@@ -6,9 +6,8 @@ layout: default
 
 
 <div class="index-header">
-  <h1>CommonSense America</h1>
-
   <div class="section">
+    <h1>CommonSense America</h1>
     <h2>About Us</h2>
     <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
     <p>Our goal is to help Americans discover, defend, and introduce others to the ideas that made America great with truth and grace.</p>
@@ -19,7 +18,7 @@ layout: default
   <div class="section">
     <h2>Our Team</h2>
     <div class="about-wrapper">
-      <img src="{{ "/assets/grant.webp" | relative_url }}" class="about-image">
+      <div style="background-image: url({{ "/assets/grant.webp" | relative_url }});" class="about-image"></div>
       <div class="about-text">
         <h3>Grant May</h3>
         <h4>Founder</h4>
@@ -27,7 +26,7 @@ layout: default
       </div>
     </div>
     <div class="about-wrapper" style="flex-direction: row-reverse;">
-      <img src="{{ "/assets/tori.webp" | relative_url }}" class="about-image">
+      <div style="background-image: url({{ "/assets/tori.webp" | relative_url }});" class="about-image"></div>
       <div class="about-text">
         <h3>Tori Kimball</h3>
         <h4>Editor In Chief</h4>
@@ -35,7 +34,7 @@ layout: default
       </div>
     </div>
     <div class="about-wrapper">
-      <img src="{{ "/assets/noah.webp" | relative_url }}" class="about-image">
+      <div style="background-image: url({{ "/assets/noah.webp" | relative_url }});" class="about-image"></div>
       <div class="about-text">
         <h3>Noah Diaz</h3>
         <h4>Head of Graphic Design</h4>

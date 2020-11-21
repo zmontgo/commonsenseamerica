@@ -349,6 +349,9 @@ input:checked ~ .tab-content {
 
 .about-image {
   width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-wrapper {
@@ -360,6 +363,8 @@ input:checked ~ .tab-content {
 @media screen and (max-width: 800px) {
   .about-image {
     width: 100vw;
+    height: 50vh;
+    border-radius: 10px;
   }
 
   .about-text {

@@ -203,6 +203,18 @@
         .menu-btn:checked ~ .menu-icon {
             border-radius: 50%;
 
+            .menu-icon__line {
+                background: white;
+        
+                &::before {
+                    background: white;
+                }
+
+                &::after {
+                    background: white;
+                }
+            }
+
             &.animate {
                 .menu-icon__line {
                     animation: openMid 0.8s forwards;

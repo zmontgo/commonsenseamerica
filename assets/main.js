@@ -1,5 +1,6 @@
 const header = document.querySelector('.site-header');
 const toggler = document.querySelector('.menu-icon');
+const body = document.getElementById('body');
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
@@ -12,9 +13,12 @@ window.addEventListener('scroll', () => {
 
 ;(function(){
     function addAnim() {
-        toggler.classList.add('animate')
-        // remove the listener, no longer needed
-        toggler.removeEventListener('click', addAnim);
+        if (toggler.classList.contains('animate') != true) {
+            toggler.classList.add('animate');
+        }
+        
+        if (body.style.overflow == "hidden") {body.style.overflow = "visible";}
+        else {body.style.overflow = "hidden";}
     };
 
     // listen to mouseover for the container
