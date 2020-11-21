@@ -1,6 +1,6 @@
 ---
 title: Starting a Blog
-date: 2020-08-16T09:00:00.000-05:00
+date: 2020-11-21 21:17:27 +0000
 layout: post
 main_content: First post for The Bookery's blog, outlining what it will be used for.
 categories:
