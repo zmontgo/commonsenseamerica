@@ -5,8 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: jekyll-posts
-  label: Posts
-  create: all
+  label: Blog Posts
+  create: documents
   match: "**/*"
   templates:
   - blog-post
