@@ -8,10 +8,10 @@ window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
     if (scrollPos > 10) {
         header.classList.add('scrolled');
-        spacer.classList.add('scroll');
+        if (spacer != null) spacer.classList.add('scroll');
     } else {
         header.classList.remove('scrolled');
-        spacer.classList.remove('scroll');
+        if (spacer != null) spacer.classList.remove('scroll');
     }
 });
 
@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
         if (toggler.classList.contains('animate') != true) {
             toggler.classList.add('animate');
         }
-        console.log(body.style.overflow);
+
         if (body.style.overflow == "hidden") {body.style.overflow = "";}
         else if (body.style.overflow == "" && selector.checked != true) {body.style.overflow = "hidden";}
     };
