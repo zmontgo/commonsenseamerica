@@ -1,13 +1,17 @@
 const header = document.querySelector('.site-header');
 const toggler = document.querySelector('.menu-icon');
+const spacer = document.querySelector('.topnav-spacer');
 const body = document.getElementById('body');
+const selector = document.querySelector('input[name=menu-btn]');
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
     if (scrollPos > 10) {
         header.classList.add('scrolled');
+        spacer.classList.add('scroll');
     } else {
         header.classList.remove('scrolled');
+        spacer.classList.remove('scroll');
     }
 });
 
@@ -16,9 +20,9 @@ window.addEventListener('scroll', () => {
         if (toggler.classList.contains('animate') != true) {
             toggler.classList.add('animate');
         }
-        
-        if (body.style.overflow == "hidden") {body.style.overflow = "visible";}
-        else {body.style.overflow = "hidden";}
+        console.log(body.style.overflow);
+        if (body.style.overflow == "hidden") {body.style.overflow = "";}
+        else if (body.style.overflow == "" && selector.checked != true) {body.style.overflow = "hidden";}
     };
 
     // listen to mouseover for the container

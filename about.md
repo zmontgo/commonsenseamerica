@@ -4,10 +4,9 @@ permalink: "/about/"
 layout: default
 ---
 
-
-<div class="index-header">
+<div class="topnav-spacer"></div>
+<div class="index-sections content">
   <div class="section">
-    <h1>CommonSense America</h1>
     <h2>About Us</h2>
     <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
     <p>Our goal is to help Americans discover, defend, and introduce others to the ideas that made America great with truth and grace.</p>

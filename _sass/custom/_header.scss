@@ -1,6 +1,13 @@
 /**
  * Site header
  */
+.topnav-spacer {
+    height: 65px;
+
+    &.scroll {
+        height: 50px;
+    }
+}
 
 .site-header {
     // Positioning context for the mobile navigation icon

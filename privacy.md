@@ -4,6 +4,8 @@ permalink: "/privacy-policy/"
 layout: default
 ---
 
+<div class="topnav-spacer"></div>
+<div class="section">
 # Privacy Policy
 ### We think it's the best in the world...
 
@@ -18,3 +20,4 @@ Please note that if you sign up for our mailing list, you agree to give us and M
 Learn more about the services we use on this site:
  - Mailchimp privacy policy: <a href="https://mailchimp.com/legal/privacy/" target="_blank" rel="noopener noreferrer">https://mailchimp.com/legal/privacy/</a>
  - Hyvor privacy policy: <a href="https://hyvor.com/privacy-policy" target="_blank" rel="noopener noreferrer">https://hyvor.com/privacy-policy</a>
+</div>

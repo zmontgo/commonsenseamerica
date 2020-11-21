@@ -18,6 +18,7 @@ layout: default
   }
 </style>
 
+<div class="topnav-spacer"></div>
 <div class="ambassadors-list index-sections content">
   {% for ambassador in site.ambassadors %}
     <div class="ambassador">
