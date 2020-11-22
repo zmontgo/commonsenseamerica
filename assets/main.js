@@ -4,7 +4,7 @@ const spacer = document.querySelector('.topnav-spacer');
 const body = document.getElementById('body');
 const selector = document.querySelector('input[name=menu-btn]');
 
-window.addEventListener('scroll', () => {
+function scrollCheck() {
     const scrollPos = window.scrollY;
     if (body.classList.contains('scrolled') != true) {body.classList.add('scrolled');}
     if (scrollPos > 10) {
@@ -14,6 +14,10 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
         if (spacer != null) spacer.classList.remove('scroll');
     }
+}
+
+window.addEventListener('scroll', () => {
+    scrollCheck();
 });
 
 ;(function(){
