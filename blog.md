@@ -1,7 +1,7 @@
 ---
 title: Blog
 permalink: "/blog/"
-layout: blog
+layout: default
 pagination:
   enabled: true
   collection: posts

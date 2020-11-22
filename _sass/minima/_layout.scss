@@ -634,3 +634,18 @@ input:checked ~ .tab-content {
     opacity: 0;
   }
 }*/
+
+.pagination {
+  margin: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  .links {
+    width: 50%;
+    margin: 0 auto 2em auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}

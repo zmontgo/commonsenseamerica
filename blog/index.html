@@ -5,13 +5,17 @@ layout: default
 <div class="home">
     
     <div class="index-sections content section">
-        <div class="topnav-spacer"></div>
-        {{ content }}
-        
-        {%- if site.posts.size > 0 -%}
+        <div class="topnav-spacer"></div>        
+        {%- if paginator.posts.size > 0 -%}
         <h2 class="red-header">Blog Posts</h2>
+        <div class="pagination">
+            <div class="links">
+                {% if paginator.previous_page_path != nil %} <a href="{{paginator.previous_page_path}}">Previous page</a> {% endif %}
+                {% if paginator.next_page_path != nil %} <a href="{{paginator.next_page_path}}">Next page</a> {% endif %}
+            </div>
+        </div>
         <ul class="post-list">
-            {%- for post in site.posts -%}
+            {%- for post in paginator.posts -%}
             {% assign readCalc = post.content | number_of_words %}
             {% assign readCalc = post.content | number_of_words | divided_by: 180 | round %}
             {% if readCalc == 0 %}
@@ -59,6 +63,13 @@ layout: default
             </li>
             {%- endfor -%}
         </ul>
+        <div class="pagination">
+            <p>Page {{paginator.page}} of {{paginator.total_pages}}</p>
+            <div class="links">
+                {% if paginator.previous_page_path != nil %} <a href="{{paginator.previous_page_path}}">Previous page</a> {% endif %}
+                {% if paginator.next_page_path != nil %} <a href="{{paginator.next_page_path}}">Next page</a> {% endif %}
+            </div>
+        </div>
         {% else %}
         <h2 class="post-list-heading">Blog</h2>
         <p>There doesn't seem to be anything here! Check back later.</p>
