@@ -14,7 +14,7 @@ layout: default
   }
 
   .ambassador {
-    max-width: 150px;
+    max-width: 250px;
     display: relative;
     margin: 2em;
   }
@@ -28,7 +28,7 @@ layout: default
 <div class="ambassadors-list index-sections content section wide">
   {% for ambassador in site.ambassadors %}
     <div class="ambassador">
-      <img src="{{ ambassador.image }}" style="border-radius: 50%">
+      <img src="{{ ambassador.image }}" style="border-radius: 50%;max-width: 150px;">
       <h2>{{ ambassador.name }}</h2>
       <p>Age {{ ambassador.age }} from {{ ambassador.state }}.</p>
       <p>Favorite quote: "<i>{{ ambassador.quote }}</i>"</p>
