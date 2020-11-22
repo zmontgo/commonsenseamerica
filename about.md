@@ -14,7 +14,7 @@ layout: default
     <p>We supply articles, speakers, speeches, and merchandise created by fellow conservative teens to help you win the culture wars.</p>
   </div>
 
-  <div class="section">
+  <div class="section" style="margin-bottom: 3rem">
     <h2 class="red-header">Our Team</h2>
     <div class="about-wrapper">
       <div style="background-image: url({{ "/assets/grant.webp" | relative_url }});" class="about-image"></div>

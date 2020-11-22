@@ -6,6 +6,7 @@ const selector = document.querySelector('input[name=menu-btn]');
 
 window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY;
+    if (body.classList.contains('scrolled') != true) {body.classList.add('scrolled');}
     if (scrollPos > 10) {
         header.classList.add('scrolled');
         if (spacer != null) spacer.classList.add('scroll');

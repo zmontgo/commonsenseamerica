@@ -7,21 +7,22 @@ layout: default
         <div class="hero-text">
             <h1 style="font-family: 'Source Code Pro', sans-serif;">CommonSense America</h1>
             <h2 style="font-family: 'Source Code Pro', sans-serif;font-size: 1.2em">{{- site.description | escape -}}</h3>
+            <!--<div id="scroll"><span id="scrolldown" class="arrow"><span></span>Scroll</span></div>-->
         </div>
     </div>
-    <div class="about-us index-sections content section">
+    <div class="about-us index-sections content section" id="firstsection">
         <h2 class='red-header'>Who are we?</h2>
         <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
     </div>
     <div class="about-us index-sections content section">
         <h2 class='red-header'>Get Involved</h2>
-        <p>CommonSense America stretches all throughout the country. See our <a href="ambassadors/">ambassadors</a> or become one yourself!</p>
+        <p>CommonSense America stretches all throughout the country. See our <a href="ambassadors/">ambassadors</a>!</p>
     </div>
     <div class="about-us index-sections content section">
         <h2 class="red-header">Get the Latest</h2>
         {%- if site.posts.size > 0 -%}
         <h2 class="post-list-heading">Blog Posts</h2>
-        <ul class="post-list" style="display: flex;justify-content: space-around;flex-wrap:nowrap">
+        <ul class="post-list" style="display: flex;justify-content: space-around;flex-wrap:wrap">
             {%- for post in site.posts limit:2 -%}
             <li class="post">
                 <h3>

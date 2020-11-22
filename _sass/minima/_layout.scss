@@ -92,9 +92,6 @@ h1, h2, h3 {
   p, .logo, a {
     font-size: 4.5vw;
   }
-  h2 {
-    font-size: 6vw!important;
-  }
   .social-btns {
     display: flex;
     justify-content: space-around;
@@ -141,6 +138,7 @@ h1, h2, h3 {
   list-style: none;
 
   > li {
+    min-width: 350px;
     margin-bottom: $spacing-unit;
     border: 2px solid black;
     text-align: left;
@@ -407,6 +405,14 @@ input:checked ~ .tab-content {
     text-align: center;
     width: 100vw;
   }
+
+  .section {
+    width: 90vw;
+  }
+
+  .post {
+    min-width: 100%!important;
+  }
 }
 
 .social-btns {
@@ -521,3 +527,110 @@ input:checked ~ .tab-content {
     width: 50vw;
   }
 }
+
+@keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+
+/*.scrolled #scroll {
+  transition: 1s;
+  opacity: 0;
+}
+
+#scroll {
+  bottom: -25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+#scroll .arrow {
+  padding-top: 60px;
+  color: white;
+  animation-name: fadein;
+  animation-duration: 3s;
+  cursor: default;
+
+  span {
+    position: absolute;
+    top: -7vh;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 16px;
+      height: 16px;
+      margin: -12px 0 0 -8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      content: '';
+      width: 44px;
+      height: 44px;
+      box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+      border-radius: 100%;
+      opacity: 0;
+      -webkit-animation: sdb03 3s infinite;
+      animation: sdb03 3s infinite;
+      box-sizing: border-box;
+    }
+  }
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/

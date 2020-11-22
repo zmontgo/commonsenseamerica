@@ -4,6 +4,14 @@ permalink: "/podcasts/"
 layout: default
 ---
 
+<style>
+  @media screen and (max-width: 800px) {
+    .about-text {
+      padding: 0;
+    }
+  }
+</style>
+
 <div class="topnav-spacer"></div>
 <div class="topnav-spacer"></div>
 <div class="index-sections content">
