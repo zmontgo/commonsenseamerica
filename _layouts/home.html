@@ -23,7 +23,7 @@ layout: default
         <h2 class="red-header">Get the Latest</h2>
         {%- if site.posts.size > 0 -%}
         <h2 class="post-list-heading">Blog Posts</h2>
-        <ul class="post-list" style="display: flex;justify-content: space-around;flex-wrap:wrap">
+        <ul class="post-list" style="display: flex;justify-content: space-between;flex-wrap:wrap">
             {%- for post in site.posts limit:2 -%}
             <li class="post">
                 <h3>

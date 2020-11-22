@@ -10,20 +10,22 @@ layout: default
     justify-content: space-around;
     max-width: 100%;
     flex-wrap: wrap;
+    text-align: center;
   }
 
   .ambassador {
+    max-width: 150px;
     display: relative;
     margin: 2em;
   }
 </style>
 
 <div class="topnav-spacer"></div>
-<div class="content">
+<div class="content section">
   <h2 class="red-header">Meet Our Ambassadors</h2>
   <p>Something about what ambassadors do.</p>
 </div>
-<div class="ambassadors-list index-sections content">
+<div class="ambassadors-list index-sections content section wide">
   {% for ambassador in site.ambassadors %}
     <div class="ambassador">
       <img src="{{ ambassador.image }}" style="border-radius: 50%">

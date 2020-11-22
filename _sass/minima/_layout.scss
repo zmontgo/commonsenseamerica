@@ -157,9 +157,10 @@ input[type=submit] {
 .post-list {
   margin-left: 0;
   list-style: none;
+  width: 100%;
 
   > li {
-    min-width: 350px;
+    min-width: 300px;
     margin-bottom: $spacing-unit;
     border: 2px solid black;
     text-align: left;
@@ -239,7 +240,6 @@ input[type=submit] {
 }
 .content {
   padding: .5rem .75rem;
-  text-align: center;
 }
 
 // Misc
@@ -438,6 +438,10 @@ input:checked ~ .tab-content {
   #mc_embed_signup {
     width: 100%;
   }
+
+  .content {
+    text-align: center;
+  }
 }
 
 .social-btns {
@@ -544,13 +548,6 @@ input:checked ~ .tab-content {
   transform: translate(-50%,-50%);
   height: 40px;
   width: 50px;
-}
-
-@media screen and (min-width: 1000px) {
-  .post-list {
-    margin: 0 auto;
-    width: 50vw;
-  }
 }
 
 @keyframes fadein{

@@ -20,6 +20,6 @@ layout: default
   <p>Learn more about the services we use on this site:</p>
   <ul>
     <li>Mailchimp privacy policy: <a href="https://mailchimp.com/legal/privacy/" target="_blank" rel="noopener noreferrer">https://mailchimp.com/legal/privacy/</a></li>
-    <li>Hyvor privacy policy: <a href="https://hyvor.com/privacy-policy" target="_blank" rel="noopener noreferrer">https://hyvor.com/privacy-policy</a></li>
+    <li>CommentBox privacy policy: <a href="https://commentbox.io/privacy/" target="_blank" rel="noopener noreferrer">https://commentbox.io/privacy/</a></li>
   </ul>
 </div>

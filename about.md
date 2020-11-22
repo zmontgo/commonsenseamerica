@@ -8,10 +8,8 @@ layout: default
 <div class="index-sections content">
   <div class="section">
     <h2 class="red-header">About Us</h2>
-    <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers.</p>
-    <p>Our goal is to help Americans discover, defend, and introduce others to the ideas that made America great with truth and grace.</p>
-    <p>We are community of young patriots seeking to pushback against the trendy, fashionable, vogue ideas of today’s culture.</p>
-    <p>We supply articles, speakers, speeches, and merchandise created by fellow conservative teens to help you win the culture wars.</p>
+    <p>CommonSense America is the premier organization to equip individual young people to engage in their communities and win over hearts and minds of their peers. Our goal is to help Americans discover, defend, and introduce others to the ideas that made America great with truth and grace.</p>
+    <p>We are community of young patriots seeking to pushback against the trendy, fashionable, vogue ideas of today’s culture. We supply articles, speakers, speeches, and merchandise created by fellow conservative teens to help you win the culture wars.</p>
   </div>
 
   <div class="section" style="margin-bottom: 3rem">
