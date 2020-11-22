@@ -2,6 +2,27 @@ h1, h2, h3 {
   font-family: 'Source Code Pro', sans-serif;
 }
 
+#mc_embed_signup {
+  margin: 0 auto;
+  width: 50%;
+}
+input {
+  width: 100%;
+  padding: 0.5em 1rem;
+  height: 5vh;
+  border: black solid 2px;
+  /* color: white; */
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 3vh;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
 /**
  * Site footer
  */
@@ -394,7 +415,7 @@ input:checked ~ .tab-content {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .about-image {
     width: 100vw;
     height: 50vh;
@@ -413,12 +434,16 @@ input:checked ~ .tab-content {
   .post {
     min-width: 100%!important;
   }
+
+  #mc_embed_signup {
+    width: 100%;
+  }
 }
 
 .social-btns {
   overflow: hidden;
 }
-.social-btns .btn, .social-btns .btn:before, .social-btns .btn .fa {
+.social-btns .btn, .social-btns .btn:before, .social-btns .btn .fab {
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0, 0);
 }
@@ -427,12 +452,14 @@ input:checked ~ .tab-content {
   left: -110%;
   visibility: visible;
 }
-.social-btns .btn .fa {
+.social-btns .btn .fab {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
 
 .social-btns .btn.instagram {
+  color: $instagram;
+  
   &:hover {
     transition: background-color 1s;
     background: $instagram;
@@ -440,14 +467,12 @@ input:checked ~ .tab-content {
 
   &:before {
     background: $instagram;
-  }
-
-  .fa {
-    color: $instagram;
   }
 }
 
 .social-btns .btn.twitter {
+  color: $twitter;
+
   &:hover {
     transition: background-color 1s;
     background: $twitter;
@@ -455,14 +480,12 @@ input:checked ~ .tab-content {
 
   &:before {
     background: $twitter;
-  }
-
-  .fa {
-    color: $twitter;
   }
 }
 
 .social-btns .btn.google {
+  color: $google;
+
   &:hover {
     transition: background-color 1s;
     background: $google;
@@ -470,10 +493,6 @@ input:checked ~ .tab-content {
 
   &:before {
     background: $google;
-  }
-
-  .fa {
-    color: $google;
   }
 }
 
@@ -481,13 +500,14 @@ input:checked ~ .tab-content {
   top: -10%;
   left: -10%;
 }
-.social-btns .btn:focus .fa, .social-btns .btn:hover .fa {
-  color: #fff;
+.social-btns .btn:focus .fab, .social-btns .btn:hover .fab {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+.social-btns .btn:focus, .social-btns .btn:hover {
+  color: white;
+}
 .social-btns {
-  font-size: 0;
   position: relative;
   top: 0;
   bottom: 0;
@@ -516,9 +536,14 @@ input:checked ~ .tab-content {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.social-btns .btn .fa {
-  font-size: 38px;
-  vertical-align: middle;
+
+.social-btns .svg-inline--fa {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 40px;
+  width: 50px;
 }
 
 @media screen and (min-width: 1000px) {

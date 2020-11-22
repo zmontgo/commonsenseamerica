@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
     .site-header.scrolled {
         .logo {
             display: none;
@@ -116,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 849px) {
     .site-header {
         &.scrolled {
             .menu-icon__line {

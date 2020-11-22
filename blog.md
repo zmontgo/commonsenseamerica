@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Articles
 permalink: "/blog/"
 layout: default
 pagination:
