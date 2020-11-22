@@ -13,7 +13,6 @@ layout: default
 </style>
 
 <div class="topnav-spacer"></div>
-<div class="topnav-spacer"></div>
 <div class="index-sections content">
   <div class="about-wrapper section wide">
     <div class="about-text">

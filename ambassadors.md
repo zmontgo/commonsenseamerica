@@ -23,7 +23,7 @@ layout: default
 <div class="topnav-spacer"></div>
 <div class="content section">
   <h2 class="red-header">Meet Our Ambassadors</h2>
-  <p>Something about what ambassadors do.</p>
+  <p>The defenders of the ideas that made America great.</p>
 </div>
 <div class="ambassadors-list index-sections content section wide">
   {% for ambassador in site.ambassadors %}
