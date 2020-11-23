@@ -21,7 +21,7 @@ layout: default
       <p>Tune into the latest episodes of the podcast designed specifically for freedom loving Americans that do not want to be swamped by the news cycle.</p>
     </div>
     <div class="about-text" style="background: url(https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif) center center no-repeat;">
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shrMEDVHZgVPqEmgH?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" src="https://anchor.fm/grant-may"></iframe>
+      <iframe class="airtable-embed" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" src="https://anchor.fm/grant-may"></iframe>
     </div>
   </div>
 </div>
