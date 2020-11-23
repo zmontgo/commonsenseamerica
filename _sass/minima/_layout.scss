@@ -1,5 +1,5 @@
 h1, h2, h3 {
-  font-family: 'Cutive Mono', sans-serif;
+  font-family: 'Courier Prime', sans-serif;
 }
 
 #mc_embed_signup {
@@ -154,7 +154,7 @@ input[type=submit] {
 
 .post-list-heading {
   @include relative-font-size(1.75);
-  font-family: 'Cutive Mono', sans-serif;
+  font-family: 'Courier Prime', sans-serif;
 }
 
 .post-list {
@@ -177,7 +177,7 @@ input[type=submit] {
 .post-link {
   display: block;
   @include relative-font-size(1.5);
-  font-family: 'Cutive Mono', sans-serif;
+  font-family: 'Courier Prime', sans-serif;
 }
 
 
@@ -193,7 +193,7 @@ input[type=submit] {
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-  font-family: 'Cutive Mono', sans-serif;
+  font-family: 'Courier Prime', sans-serif;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -240,7 +240,7 @@ input[type=submit] {
 }
 .red-header {
   color: #BB2D21;
-  font-family: 'Cutive Mono', sans-serif;
+  font-family: 'Courier Prime', sans-serif;
 }
 .content {
   padding: .5rem .75rem;
