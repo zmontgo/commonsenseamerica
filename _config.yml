@@ -21,6 +21,9 @@ baseurl: ''
 url: https://zmontgo.github.io
 logo: 'https://zmontgo.github.io/assets/logo.png'
 show_excerpts: true
+instagram: 'https://www.instagram.com/commonsense_america/'
+twitter: ''
+youtube: ''
 header_pages:
 - index.md
 - about.md
