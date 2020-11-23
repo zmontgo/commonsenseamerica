@@ -8,7 +8,10 @@ layout: default
 <div class="index-sections content section">
   <h2 class="red-header">Book Grant To Speak</h2>
   <p>Get Grant to come speak about stuff.</p>
-  <ul class="post-list" style="display: flex;justify-content: space-between;flex-wrap:wrap">
+  <ul class="post-list" style="display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;justify-content: space-between;flex-wrap:wrap">
     <li class="post">
       <h3>Bring Grant to Speak</h3>
       <p><em>Must give at least a one month notice.</em></p>

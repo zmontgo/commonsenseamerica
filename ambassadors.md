@@ -6,7 +6,10 @@ layout: default
 
 <style>
   .ambassadors-list {
-    display: flex;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
     justify-content: space-around;
     max-width: 100%;
     flex-wrap: wrap;

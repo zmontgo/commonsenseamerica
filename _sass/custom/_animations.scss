@@ -1,4 +1,4 @@
-@keyframes openTop {
+@include keyframes(openTop) {
   0% {
       transform: translateY(-5px)
       rotate(0deg);
@@ -13,7 +13,7 @@
   }
 }
 
-@keyframes openMid {
+@include keyframes(openMid) {
   50% {
       transform: rotate(0deg);
   }
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes openBtm {
+@include keyframes(openBtm) {
   0% {
       transform: translateY(5px)
       rotate(0deg);
@@ -37,7 +37,7 @@
   }
 }
 
-@keyframes closedTop {
+@include keyframes(closedTop) {
   0% {
       transform: translateY(-5px)
       rotate(0deg);
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes closedMid {
+@include keyframes(closedMid) {
   50% {
       transform: rotate(0deg);
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@keyframes closedBtm {
+@include keyframes(closedBtm) {
   0% {
       transform: translateY(5px)
       rotate(0deg);

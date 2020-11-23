@@ -41,7 +41,10 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  display: flex;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
   flex-direction: column;
 }
 

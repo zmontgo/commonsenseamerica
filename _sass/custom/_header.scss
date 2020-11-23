@@ -12,7 +12,10 @@
 .site-header {
     // Positioning context for the mobile navigation icon
     position: fixed;
-    display: flex;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
     justify-content: space-between;
     align-items: center;
     height: 65px;
@@ -29,7 +32,10 @@
     }
 
     .nav-links {
-        display: flex;
+        display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
         list-style: none;
 
         .nav-link {
@@ -138,16 +144,34 @@
 
         .menu-icon.animate {
             .menu-icon__line {
+                -webkit-animation: closedMid 0.8s backwards;
+                -o-animation: closedMid 0.8s backwards;
+                -moz-animation: closedMid 0.8s backwards;
                 animation: closedMid 0.8s backwards;
+                -webkit-animation-direction: reverse;
+                -o-animation-direction: reverse;
+                -moz-animation-direction: reverse;
                 animation-direction: reverse;
 
                 &::before {
+                    -webkit-animation: closedTop 0.8s backwards;
+                    -o-animation: closedTop 0.8s backwards;
+                    -moz-animation: closedTop 0.8s backwards;
                     animation: closedTop 0.8s backwards;
+                    -webkit-animation-direction: reverse;
+                    -o-animation-direction: reverse;
+                    -moz-animation-direction: reverse;
                     animation-direction: reverse;
                 }
 
                 &::after {
+                    -webkit-animation: closedBtm 0.8s backwards;
+                    -o-animation: closedBtm 0.8s backwards;
+                    -moz-animation: closedBtm 0.8s backwards;
                     animation: closedBtm 0.8s backwards;
+                    -webkit-animation-direction: reverse;
+                    -o-animation-direction: reverse;
+                    -moz-animation-direction: reverse;
                     animation-direction: reverse;
                 }
             }

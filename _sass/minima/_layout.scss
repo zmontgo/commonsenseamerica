@@ -114,6 +114,9 @@ input[type=submit] {
     font-size: 4.5vw;
   }
   .social-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-around;
   }
@@ -250,6 +253,9 @@ input[type=submit] {
 }
 
 .cardholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -305,6 +311,8 @@ input.accordioninput {
 }
 .tab-label {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
           justify-content: space-between;
@@ -335,7 +343,10 @@ input.accordioninput {
 }
 .tab-close {
   display: -webkit-box;
-  display: flex;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
   flex: 0 0 auto;
   -webkit-box-pack: end;
           justify-content: flex-end;
@@ -411,7 +422,10 @@ input:checked ~ .tab-content {
 }
 
 .about-wrapper {
-  display: flex;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -659,16 +673,23 @@ input:checked ~ .tab-content {
 }*/
 
 .pagination {
+  text-align: center;
   margin: auto;
   width: 50vw;
-  display: flex;
+  display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
   flex-direction: column;
   justify-content: center;
   
   .links {
     width: 50%;
     margin: 0 auto 2em auto;
-    display: flex;
+    display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
     justify-content: space-around;
   }
 }
